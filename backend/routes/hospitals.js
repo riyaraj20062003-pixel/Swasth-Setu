@@ -29,9 +29,6 @@ await getNearbyHospitals(
 );
 res.json(hospitals);
 
-
-        res.json(hospitals);
-
     } catch (error) {
 
     console.error("FULL ERROR:");
