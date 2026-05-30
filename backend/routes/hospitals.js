@@ -27,54 +27,7 @@ await getNearbyHospitals(
     latitude,
     longitude
 );
-if(speciality){
-
-hospitals = hospitals.filter(hospital => {
-
-    const name =
-    (
-        hospital.tags?.name || ""
-    ).toLowerCase();
-
-    switch(speciality){
-
-        case "eye":
-            return name.includes("eye") ||
-                   name.includes("vision") ||
-                   name.includes("ophthalm");
-
-        case "heart":
-            return name.includes("heart") ||
-                   name.includes("cardio");
-
-        case "skin":
-            return name.includes("skin") ||
-                   name.includes("derma");
-
-        case "bone":
-            return name.includes("ortho") ||
-                   name.includes("bone");
-
-        case "child":
-            return name.includes("child") ||
-                   name.includes("pediatric");
-
-        case "dental":
-            return name.includes("dental") ||
-                   name.includes("tooth");
-
-        case "gynecology":
-            return name.includes("women") ||
-                   name.includes("gyne");
-
-        default:
-            return true;
-    }
-
-});
-
-
-}
+res.json(hospitals);
 
 
         res.json(hospitals);
