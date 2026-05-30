@@ -573,8 +573,8 @@ const specialistName =
 specialityNames[specialist];
     const response =
     await fetch(
-    `http://localhost:5000/api/hospitals?lat=${lat}&lng=${lng}&speciality=${specialist}`
-    );
+`https://swasth-setu-backend.onrender.com/api/hospitals?lat=${lat}&lng=${lng}&speciality=${specialist}`
+);
 
     const hospitals =
     await response.json();
