@@ -33,8 +33,8 @@ html{
 }
 
 body{
-    background:#f8fafc;
-    color:var(--text);
+    background:#000;
+    color:#fff;
     overflow-x:hidden;
     transition:0.4s ease;
 }
@@ -545,6 +545,7 @@ body.dark-mode .hero p{
 
 .features{
     padding:180px 8% 120px;
+    background:#111;
 }
 
 .section-title{
@@ -712,7 +713,7 @@ body.dark-mode .hero p{
 .ai-section{
 
     padding:140px 8%;
-
+    background:#111;
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -1439,6 +1440,7 @@ body.dark-mode #symptomInput{
 
 .clinics{
     width:100%;
+    background:#111;
     min-height:100vh;
     padding:120px 5%;
     text-align:center;
@@ -1935,7 +1937,7 @@ body.dark-mode #symptomInput{
 .testimonials{
 
     padding:180px;
-
+    background:#111;
     text-align:center;
 }
 .quote-icon{
@@ -2347,7 +2349,12 @@ body.dark-mode #clinicSearch{
     }
 
 }
-
+#darkModeBtn{
+    display:none;
+}
+h1,h2,h3,h4,h5,h6{
+    color:white;
+}
 
 
 
