@@ -115,7 +115,7 @@ document.getElementById(
 // PASTE YOUR GEMINI API KEY
 
 const API_KEY =
-"AQ.Ab8RN6Lj_chFDF-McT0_DNkk_Bwr_Rjwum4dN4ERsO1DM6NvcA";
+"";
 
 if (sendBtn && userInput && chatMessages) {
 
