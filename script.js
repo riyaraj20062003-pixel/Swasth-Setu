@@ -228,7 +228,7 @@ if (sendBtn && userInput && chatMessages) {
 
             const response =
             await fetch(
-            "http://localhost:5000/api/chat",
+            "https://swasth-setu-backend.onrender.com/api/chat",
             {
                 method:"POST",
 

@@ -226,7 +226,38 @@ section{
 /* =========================
    RESPONSIVE
 ========================= */
+@media (max-width: 900px){
 
+    .nav-links{
+        display:none;
+    }
+
+    .hamburger{
+        display:flex;
+    }
+
+    .navbar{
+        width:95%;
+        top:10px;
+    }
+
+    .nav-container{
+        padding:12px 15px;
+    }
+
+    .logo-title{
+        font-size:1rem;
+    }
+
+    .logo-subtitle{
+        display:none;
+    }
+
+    .mobile-menu{
+        width:100%;
+    }
+
+}
 @media(max-width:768px){
 
     .logo img{
@@ -3429,16 +3460,29 @@ font-weight:600;
    MOBILE
 ========================= */
 
-@media(max-width:768px){
+@media (max-width:768px){
 
-    #cbcResult{
+    .cbc-form{
+        display:flex;
+        flex-direction:column;
+        gap:15px;
+    }
 
+    .cbc-form input{
+        width:100%;
+        min-width:100%;
+    }
+
+    .cbc-grid{
         grid-template-columns:1fr;
     }
 
-    .cbc-item{
+    .cbc-result-card{
+        width:100%;
+    }
 
-        padding:18px;
+    .cbc-analyzer{
+        padding:20px;
     }
 
 }
