@@ -103,10 +103,6 @@ const languageSelect =
 document.getElementById(
     "languageSelect"
 );
-// PASTE YOUR GEMINI API KEY
-
-const API_KEY =
-"";
 
 if (sendBtn && userInput && chatMessages) {
 
@@ -168,10 +164,6 @@ if (sendBtn && userInput && chatMessages) {
         userInput.value.trim();
 
         if (!message) return;
-
-        // =========================
-        // EMERGENCY DETECTION
-        // =========================
 
         const emergencyWords = [
 
@@ -236,7 +228,7 @@ if (sendBtn && userInput && chatMessages) {
 
             const response =
             await fetch(
-            `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${API_KEY}`,
+            "http://localhost:5000/api/chat",
             {
                 method:"POST",
 
@@ -247,11 +239,7 @@ if (sendBtn && userInput && chatMessages) {
 
                 body:JSON.stringify({
 
-                    contents:[
-                        {
-                            parts:[
-                                {
-                                    text:`
+                    message: `
 You are Arogya AI.
 
 You are the healthcare assistant of Swasth Setu.
@@ -269,12 +257,8 @@ ${languageSelect?.value || "English"}
 User Question:
 ${message}
 `
-                                }
-                            ]
-                        }
-                    ]
-
                 })
+
             });
 
             const data =
@@ -284,22 +268,8 @@ ${message}
             .getElementById("typing")
             ?.remove();
 
-            let aiReply;
-
-            if(data.candidates){
-
-                aiReply =
-                data.candidates[0]
-                .content.parts[0]
-                .text;
-
-            }
-            else{
-
-                aiReply =
-                "Arogya AI is currently busy. Please try again later.";
-
-            }
+            const aiReply =
+            data.reply;
 
             addMessage(
                 aiReply,
@@ -356,6 +326,7 @@ ${message}
     );
 
 }
+
 // =========================
 // CHAT HISTORY
 // =========================
@@ -377,8 +348,6 @@ if(chatMessages){
     }
 
 }
-
-// Save every 2 seconds
 
 setInterval(() => {
 
@@ -455,15 +424,6 @@ if(
         }
     );
 
-    recognition.onstart =
-    () => {
-
-        console.log(
-            "Listening..."
-        );
-
-    };
-
     recognition.onresult =
     (event) => {
 
@@ -478,20 +438,6 @@ if(
 
     recognition.onend =
     () => {
-
-        voiceBtn.classList.remove(
-            "listening"
-        );
-
-    };
-
-    recognition.onerror =
-    (event) => {
-
-        console.log(
-            "Voice Error:",
-            event.error
-        );
 
         voiceBtn.classList.remove(
             "listening"
