@@ -1,321 +1,414 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
+<meta charset="UTF-8">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
 
-    <title>Swasth Setu</title>
+<title>Swasth Setu</title>
 
-    <!-- Font Awesome -->
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
-    <!-- CSS -->
-
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+      href="style.css">
 
 </head>
 
 <body>
+<!-- =========================
+        PREMIUM NAVBAR
+========================= -->
 
-    <!-- =========================
-            NAVBAR
-    ========================== -->
+<nav class="navbar">
 
-    <nav class="navbar">
+    <div class="nav-container">
 
-        <div class="logo">
-            <img src="images/logo.png" alt="Swasth Setu">
-        </div>
+        <!-- LOGO -->
 
-        <ul class="nav-links">
+        <a href="#home" class="logo">
 
-            <li>
-                <a href="#home">
-                    <i class="fa-solid fa-house"></i>
-                    Home
-                </a>
-            </li>
+            <img
+                src="images/logo.png"
+                alt="Swasth Setu Logo">
 
-            <li>
-                <a href="#features">
-                    <i class="fa-solid fa-star"></i>
-                    Features
-                </a>
-            </li>
+            <div class="logo-text">
 
-            <li>
-                <a href="#assistant">
-                    <i class="fa-solid fa-robot"></i>
-                    AI Assistant
-                </a>
-            </li>
+                <span class="logo-title">
+                    Swasth Setu
+                </span>
 
-            <li>
-                <a href="#clinics">
-                    <i class="fa-solid fa-hospital"></i>
-                    Clinics
-                </a>
-            </li>
+                <span class="logo-subtitle">
+                    AI Healthcare Platform
+                </span>
 
-            <li>
-                <a href="#emergency">
-                    <i class="fa-solid fa-truck-medical"></i>
-                    Emergency
-                </a>
-            </li>
+            </div>
 
-        </ul>
+        </a>
+
+        <!-- HAMBURGER -->
 
         <div class="nav-right">
 
-           
+            <div class="hamburger">
 
-            <button class="login-btn">
-                <i class="fa-solid fa-user"></i>
-                Login
-            </button>
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
 
         </div>
 
-        <div class="menu-toggle">
-            <i class="fa-solid fa-bars"></i>
-        </div>
+    </div>
 
-    </nav>
+</nav>
 
-    <!-- =========================
+<!-- =========================
+        SIDEBAR MENU
+========================= -->
+
+<div class="mobile-menu">
+
+    <a href="#home">
+
+        <i class="fa-solid fa-house"></i>
+
+        Home
+
+    </a>
+
+    <a href="#assistant">
+
+        <i class="fa-solid fa-robot"></i>
+
+        Arogya AI
+
+    </a>
+
+    <a href="#prescription">
+
+        <i class="fa-solid fa-file-medical"></i>
+
+        Prescription Reader
+
+    </a>
+
+    <a href="#cbc">
+
+        <i class="fa-solid fa-vial-circle-check"></i>
+
+        CBC Analyzer
+
+    </a>
+
+    <a href="#emergency">
+
+        <i class="fa-solid fa-truck-medical"></i>
+
+        Emergency
+
+    </a>
+
+    <a href="#clinics">
+
+        <i class="fa-solid fa-user-doctor"></i>
+
+        Specialists
+
+    </a>
+
+    <a href="#testimonials">
+
+        <i class="fa-solid fa-star"></i>
+
+        Reviews
+
+    </a>
+
+    <a href="#contact">
+
+        <i class="fa-solid fa-envelope"></i>
+
+        Contact
+
+    </a>
+
+</div>
+
+<!-- =========================
             HERO
-    ========================== -->
+========================= -->
 
-    <section id="home" class="hero">
+<section id="home"
+         class="hero">
 
-        <div class="hero-content">
 
-            <span class="hero-tag">
-                AI Powered Healthcare Platform
-            </span>
+<div class="hero-content">
 
-            <p class="hero-small">
-                Trusted by thousands of patients across India
-            </p>
+    <span class="hero-tag">
 
-            <h1>AI Powered
-    <br>
-    Healthcare
-    <br>
-    <span> At Your Fingertips</span>
-</h1>
+        🇮🇳 India's AI Powered Healthcare Platform
 
-            <p>
-                Check symptoms, find nearby clinics,
-                access emergency services and get
-                healthcare guidance instantly.
-            </p>
+    </span>
 
-            <div class="hero-features">
+    <h1>
 
-                <span>
-                    <i class="fa-solid fa-circle-check"></i>
-                    AI Symptom Checker
-                </span>
+        Healthcare
+        <span>Made Smarter</span>
+        With AI
 
-                <span>
-                    <i class="fa-solid fa-circle-check"></i>
-                    Nearby Clinics
-                </span>
+    </h1>
 
-                <span>
-                    <i class="fa-solid fa-circle-check"></i>
-                    Emergency Support
-                </span>
+    <p>
 
-            </div>
+        Get instant health guidance,
+        discover nearby hospitals,
+        access emergency support
+        and connect with healthcare
+        services through one
+        intelligent platform.
 
-            <div class="hero-buttons">
+    </p>
 
-                <button class="primary-btn">
-                    Get Started
-                </button>
+    <div class="hero-features">
 
-                <button class="secondary-btn">
-                    AI Assistant
-                </button>
+        <span>
 
-            </div>
+            <i class="fa-solid fa-circle-check"></i>
 
-            
+            AI Symptom Analysis
 
-        </div>
+        </span>
 
-        <div class="hero-image">
+        <span>
 
-            <img src="images/doctor.png" alt="AI Healthcare">
+            <i class="fa-solid fa-circle-check"></i>
 
-        </div>
-    </section>
-        <!-- =========================
+            Hospital Finder
+
+        </span>
+
+        <span>
+
+            <i class="fa-solid fa-circle-check"></i>
+
+            Emergency Support
+
+        </span>
+
+    </div>
+
+    <div class="hero-buttons">
+
+        <a href="#assistant"
+           class="primary-btn">
+
+            Start AI Assistant
+
+        </a>
+
+        <a href="#clinics"
+           class="secondary-btn">
+
+            Find Specialists
+
+        </a>
+
+    </div>
+
+</div>
+
+<div class="hero-image">
+
+    <img src="images/doctor.png"
+         alt="Healthcare AI">
+
+</div>
+
+
+</section>
+
+<!-- =========================
         STATS SECTION
 ========================= -->
 
 <section class="stats-section">
 
-    <div class="stats-container">
 
-        <div class="stats-card">
+<div class="stats-container">
 
-            <i class="fa-solid fa-users"></i>
+    <div class="stats-card">
 
-            <h2>10K+</h2>
+        <i class="fa-solid fa-users"></i>
 
-            <p>Patients</p>
+        <h2>50K+</h2>
 
-        </div>
-
-        <div class="stats-card">
-
-            <i class="fa-solid fa-user-doctor"></i>
-
-            <h2>500+</h2>
-
-            <p>Doctors</p>
-
-        </div>
-
-        <div class="stats-card">
-
-            <i class="fa-solid fa-hospital"></i>
-
-            <h2>200+</h2>
-
-            <p>Clinics</p>
-
-        </div>
-
-        <div class="stats-card">
-
-            <i class="fa-solid fa-headset"></i>
-
-            <h2>24/7</h2>
-
-            <p>Support</p>
-
-        </div>
+        <p>Patients Assisted</p>
 
     </div>
 
+    <div class="stats-card">
+
+        <i class="fa-solid fa-user-doctor"></i>
+
+        <h2>500+</h2>
+
+        <p>Doctors</p>
+
+    </div>
+
+    <div class="stats-card">
+
+        <i class="fa-solid fa-hospital"></i>
+
+        <h2>200+</h2>
+
+        <p>Hospitals</p>
+
+    </div>
+
+    <div class="stats-card">
+
+        <i class="fa-solid fa-headset"></i>
+
+        <h2>24/7</h2>
+
+        <p>Support</p>
+
+    </div>
+
+</div>
+
+
 </section>
 
-    
+<!-- =========================
+          FEATURES
+========================= -->
 
-    <!-- =========================
-            FEATURES
-    ========================== -->
+<section id="features"
+         class="features">
 
-    <section id="features" class="features">
 
-    <div class="section-title">
+<div class="section-title">
 
-        <span>OUR SERVICES</span>
+    <span>OUR SERVICES</span>
 
-        <h2>
-            Everything You Need
-            In One Platform
-        </h2>
+    <h2>
+
+        Everything You Need
+        In One Platform
+
+    </h2>
+
+    <p>
+
+        AI-powered healthcare tools
+        designed to make medical
+        assistance smarter, faster
+        and accessible to everyone.
+
+    </p>
+
+</div>
+
+<div class="features-grid">
+
+    <div class="feature-card">
+
+        <i class="fa-solid fa-stethoscope"></i>
+
+        <h3>AI Symptom Checker</h3>
 
         <p>
-            AI-powered healthcare tools designed to make
-            medical assistance smarter, faster and
-            accessible to everyone.
+
+            Analyze symptoms instantly
+            using Artificial Intelligence.
+
         </p>
 
     </div>
 
-    <div class="features-grid">
+    <div class="feature-card">
 
-        <div class="feature-card">
+        <i class="fa-solid fa-hospital"></i>
 
-            <i class="fa-solid fa-stethoscope"></i>
+        <h3>Nearby Clinics</h3>
 
-            <h3>AI Symptom Checker</h3>
+        <p>
 
-            <p>
-                Analyze symptoms instantly using
-                Artificial Intelligence.
-            </p>
+            Find trusted hospitals and
+            clinics near your location.
 
-        </div>
-
-        <div class="feature-card">
-
-            <i class="fa-solid fa-hospital"></i>
-
-            <h3>Nearby Clinics</h3>
-
-            <p>
-                Find trusted hospitals and clinics
-                near your location.
-            </p>
-
-        </div>
-
-        <div class="feature-card">
-
-            <i class="fa-solid fa-truck-medical"></i>
-
-            <h3>Emergency Help</h3>
-
-            <p>
-                Access emergency healthcare services
-                within seconds.
-            </p>
-
-        </div>
-
-        <div class="feature-card">
-
-            <i class="fa-solid fa-microphone"></i>
-
-            <h3>Voice Assistant</h3>
-
-            <p>
-                Speak directly with AI for
-                healthcare guidance.
-            </p>
-
-        </div>
-
-        <div class="feature-card">
-
-            <i class="fa-solid fa-file-medical"></i>
-
-            <h3>Medical Reports</h3>
-
-            <p>
-                Upload prescriptions and reports
-                for quick analysis.
-            </p>
-
-        </div>
-
-        <div class="feature-card">
-
-            <i class="fa-solid fa-user-doctor"></i>
-
-            <h3>Doctor Consultation</h3>
-
-            <p>
-                Connect with healthcare experts
-                anytime, anywhere.
-            </p>
-
-        </div>
+        </p>
 
     </div>
 
+    <div class="feature-card">
+
+        <i class="fa-solid fa-truck-medical"></i>
+
+        <h3>Emergency Help</h3>
+
+        <p>
+
+            Access emergency healthcare
+            services within seconds.
+
+        </p>
+
+    </div>
+
+    <div class="feature-card">
+
+        <i class="fa-solid fa-microphone"></i>
+
+        <h3>Voice Assistant</h3>
+
+        <p>
+
+            Speak directly with AI
+            for healthcare guidance.
+
+        </p>
+
+    </div>
+
+    <div class="feature-card">
+
+        <i class="fa-solid fa-file-medical"></i>
+
+        <h3>Medical Reports</h3>
+
+        <p>
+
+            Upload prescriptions and
+            reports for quick analysis.
+
+        </p>
+
+    </div>
+
+    <div class="feature-card">
+
+        <i class="fa-solid fa-user-doctor"></i>
+
+        <h3>Doctor Consultation</h3>
+
+        <p>
+
+            Connect with healthcare
+            experts anytime, anywhere.
+
+        </p>
+
+    </div>
+
+</div>
 </section>
 <!-- =========================
         AROGYA AI
@@ -323,7 +416,6 @@
 
 <section id="assistant" class="ai-section">
 
-    <!-- LEFT SIDE -->
 
 <div class="ai-chat-box">
 
@@ -346,27 +438,19 @@
 
         </div>
 
-        <div class="language-switch">
+        <div class="ai-actions">
 
-            <select id="languageSelect" class="lang-select">
-    <option value="English">English</option>
-    <option value="Hindi">हिन्दी</option>
-    <option value="Bengali">বাংলা</option>
-    <option value="Tamil">தமிழ்</option>
-    <option value="Telugu">తెలుగు</option>
-</select>
+    <button id="muteBtn">
+        <i class="fa-solid fa-volume-high"></i>
+    </button>
 
-        </div>
-  <button id="muteBtn">
-            🔊
-        </button>
-        <button onclick="clearChat()">
-    🗑️
-</button>
+    <button onclick="clearChat()">
+        <i class="fa-solid fa-trash"></i>
+    </button>
+
+</div>
 
     </div>
-
-    <!-- CHAT MESSAGES -->
 
     <div id="chatMessages" class="chat-body">
 
@@ -382,17 +466,23 @@
 
     </div>
 
-    <!-- CHAT INPUT -->
-
     <div class="chat-input">
 
+    <select class="lang-select">
+        <option>EN</option>
+        <option>HI</option>
+    </select>
         <input
             type="text"
             id="userInput"
             placeholder="Ask Arogya AI...">
-<button id="voiceBtn">
-    <i class="fa-solid fa-microphone"></i>
-</button>
+
+        <button id="voiceBtn">
+
+            <i class="fa-solid fa-microphone"></i>
+
+        </button>
+
         <button id="sendBtn">
 
             <i class="fa-solid fa-paper-plane"></i>
@@ -402,147 +492,280 @@
     </div>
 
 </div>
-    <!-- RIGHT SIDE -->
 
-    <div class="ai-content">
+<div class="ai-content">
 
-        <span class="ai-tag">
+    <span class="ai-tag">
 
-            AI HEALTHCARE ASSISTANT
+        AI HEALTHCARE ASSISTANT
 
-        </span>
+    </span>
 
-        <h2>
+    <h2>
 
-            Meet
-            <span>Arogya AI</span>
+        Meet
+        <span>Arogya AI</span>
 
-        </h2>
+    </h2>
 
-        <p>
+    <p>
 
-            Your intelligent healthcare companion
-            offering symptom analysis, multilingual
-            support, clinic recommendations and
-            emergency assistance.
+        Your intelligent healthcare companion offering
+        symptom analysis, multilingual support,
+        clinic recommendations and emergency assistance.
 
-        </p>
+    </p>
 
-        <div class="ai-features-grid">
+    <div class="ai-features-grid">
 
-            <div class="mini-feature">
+        <div class="mini-feature">
+            🧠 Smart Diagnosis
+        </div>
 
-                🧠 Smart Diagnosis
+        <div class="mini-feature">
+            🌍 Multi-Lingual
+        </div>
 
-            </div>
+        <div class="mini-feature">
+            🎤 Voice Assistant
+        </div>
 
-            <div class="mini-feature">
+        <div class="mini-feature">
+            ⚡ Instant Response
+        </div>
 
-                🌍 Multi-Lingual
+        <div class="mini-feature">
+            🛡️ Secure
+        </div>
 
-            </div>
-
-            <div class="mini-feature">
-
-                🎤 Voice Assistant
-
-            </div>
-
-            <div class="mini-feature">
-
-                ⚡ Instant Response
-
-            </div>
-
-            <div class="mini-feature">
-
-                🛡️ Secure
-
-            </div>
-
-            <div class="mini-feature">
-
-                📍 Nearby Clinics
-
-            </div>
-
+        <div class="mini-feature">
+            📍 Nearby Clinics
         </div>
 
     </div>
 
+</div>
+
+
 </section>
 
-    <!-- =========================
-            EMERGENCY
-    ========================== -->
 
-   <section id="emergency" class="emergency">
+
+
+
+<!-- =========================
+     HEALTH PROFILE BUILDER
+========================= -->
+
+<section class="health-profile">
 
     <div class="section-title">
 
-        <span>EMERGENCY SUPPORT</span>
+        <span>DIGITAL HEALTH RECORD</span>
 
-        <h2>24/7 Emergency Assistance</h2>
+        <h2>Health Profile Builder</h2>
 
         <p>
-            Quick access to life-saving services when every second matters.
+            Create your personal healthcare profile
+            and maintain important medical records.
         </p>
 
     </div>
 
-    <div class="emergency-container">
+    <div class="profile-container">
 
-        <div class="emergency-card">
+        <!-- LEFT FORM -->
 
-            <div class="emergency-icon">
-                <i class="fa-solid fa-truck-medical"></i>
-            </div>
+        <div class="profile-form">
 
-            <h3>Ambulance Service</h3>
+            <label>
+                <i class="fa-solid fa-user"></i>
+                Full Name
+            </label>
+            <input type="text" id="name" placeholder="Enter Full Name">
 
-            <p>
-                Immediate ambulance support available 24/7 for medical emergencies.
-            </p>
+            <label>
+                <i class="fa-solid fa-cake-candles"></i>
+                Age
+            </label>
+            <input type="number" id="age" placeholder="Enter Age">
 
-            <a href="tel:108" class="emergency-btn">
-                Call 108
-            </a>
+            <label>
+                <i class="fa-solid fa-venus-mars"></i>
+                Gender
+            </label>
+            <input type="text" id="gender" placeholder="Male / Female">
 
-        </div>
-
-        <div class="emergency-card">
-
-            <div class="emergency-icon">
+            <label>
                 <i class="fa-solid fa-droplet"></i>
-            </div>
+                Blood Group
+            </label>
+            <input type="text" id="blood" placeholder="O+, A+, B+, AB+">
 
-            <h3>Blood Bank</h3>
+            <label>
+                <i class="fa-solid fa-ruler-vertical"></i>
+                Height
+            </label>
+            <input type="text" id="height" placeholder="160 cm">
 
-            <p>
-                Find nearby blood banks and emergency blood availability instantly.
-            </p>
+            <label>
+                <i class="fa-solid fa-weight-scale"></i>
+                Weight
+            </label>
+            <input type="text" id="weight" placeholder="60 kg">
 
-            <a href="#" class="emergency-btn">
-                Find Blood
-            </a>
+            <label>
+                <i class="fa-solid fa-notes-medical"></i>
+                Diseases
+            </label>
+            <input type="text" id="disease" placeholder="Asthma, Diabetes">
+
+            <label>
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                Allergies
+            </label>
+            <input type="text" id="allergy" placeholder="Dust, Pollen">
+
+            <label>
+                <i class="fa-solid fa-phone-volume"></i>
+                Emergency Contact
+            </label>
+            <input type="text" id="emergency" placeholder="9876543210">
+
+            <button id="generateCard">
+
+                <i class="fa-solid fa-heart-pulse"></i>
+
+                Generate Health Card
+
+            </button>
 
         </div>
 
-        <div class="emergency-card">
+        <!-- RIGHT SIDE -->
 
-            <div class="emergency-icon">
-                <i class="fa-solid fa-phone"></i>
+        <div class="profile-right">
+
+            <!-- HEALTH CARD -->
+
+            <div class="health-card">
+
+                <div id="healthCardOutput">
+
+                    <div class="health-id">
+
+                        <h2>
+
+                            <i class="fa-solid fa-heart-pulse"></i>
+
+                            Health Card
+
+                        </h2>
+
+                        <hr>
+
+                        <p>
+
+                            Fill the form and generate your
+                            personalized health card.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <h3>Emergency Helpline</h3>
+            <!-- HEALTH SCORE -->
 
-            <p>
-                Connect with emergency healthcare support and guidance anytime.
-            </p>
+            <div class="health-score-card">
 
-            <a href="tel:112" class="emergency-btn">
-                Call 112
-            </a>
+                <h3>
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                    Health Score
+
+                </h3>
+
+                <div class="health-score-content">
+
+                    <!-- SCORE CIRCLE -->
+
+                    <div class="score-circle">
+
+                        <span id="healthScore">
+
+                            0
+
+                        </span>
+
+                    </div>
+
+                    <!-- DETAILS -->
+
+                    <div class="score-details">
+
+                        <div class="score-row">
+
+                            <span>
+
+                                <i class="fa-solid fa-calculator"></i>
+
+                                BMI
+
+                            </span>
+
+                            <span id="bmiValue">
+
+                                --
+
+                            </span>
+
+                        </div>
+
+                        <div class="score-row">
+
+                            <span>
+
+                                <i class="fa-solid fa-shield-heart"></i>
+
+                                Risk Level
+
+                            </span>
+
+                            <span id="riskLevel">
+
+                                --
+
+                            </span>
+
+                        </div>
+
+                        <div class="score-row">
+
+                            <span>
+
+                                <i class="fa-solid fa-heart-pulse"></i>
+
+                                Status
+
+                            </span>
+
+                            <span id="healthStatus">
+
+                                --
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
 
@@ -551,211 +774,500 @@
 </section>
 
 
-    <!-- =========================
-            clinics
-    ========================== -->
 
 
-<section id="clinics" class="clinics">
-<div class="finder-badge">
-    Trusted Healthcare Network
-    <p class="clinic-mini-text">
-500+ Hospitals • 24/7 Support • AI Assistance
-</p>
-</div>
-    <h2>Find the Right Specialist</h2>
+<!-- =========================
+     PRESCRIPTION READER
+========================= -->
 
-    <p class="clinic-subtitle">
-        Select a medical specialty and discover nearby hospitals and healthcare centers.
+<section class="prescription-reader" id="prescription">
+
+    <div class="section-title">
+
+        <span>SMART HEALTHCARE</span>
+
+        <h2>Prescription Reader</h2>
+
+        <p>
+            Upload your prescription and instantly
+            extract medicines, dosage and instructions.
+        </p>
+
+    </div>
+
+    <div class="prescription-container">
+
+        <!-- LEFT -->
+
+        <div class="upload-card">
+
+            <div class="upload-icon">
+
+                <i class="fa-solid fa-file-medical"></i>
+
+            </div>
+
+            <h3>Upload Prescription</h3>
+
+            <p>JPG, PNG or PDF</p>
+
+            <input
+            type="file"
+            id="prescriptionFile">
+
+            <button
+            id="analyzePrescription">
+
+                Analyze Prescription
+
+            </button>
+
+        </div>
+
+        <!-- RIGHT -->
+
+        <div class="analysis-card">
+
+            <h3>
+
+                Analysis Result
+
+            </h3>
+
+            <div id="prescriptionResult">
+
+                Upload a prescription to
+                see extracted details.
+
+            </div>
+
+        </div>
+
+    </div>
+    </section>
+
+
+<!-- =========================
+     CBC REPORT ANALYZER
+========================= -->
+
+<section class="cbc-analyzer" id="cbc">
+
+    <div class="section-title">
+
+        <span>AI BLOOD REPORT ANALYSIS</span>
+
+        <h2>CBC Report Analyzer</h2>
+
+        <p>
+            Upload your CBC blood report and
+            receive instant health insights.
+        </p>
+
+    </div>
+
+    <div class="cbc-container">
+
+        <!-- LEFT SIDE -->
+
+        <div class="cbc-upload-card">
+
+            <div class="cbc-icon">
+
+                <i class="fa-solid fa-file-waveform"></i>
+
+            </div>
+
+            <h3>Upload CBC Report</h3>
+
+            <p>JPG, PNG or PDF</p>
+
+            <input
+            type="file"
+            id="cbcFile"
+            accept=".jpg,.jpeg,.png,.pdf">
+
+            <button
+            id="analyzeCBC">
+
+                Analyze CBC Report
+
+            </button>
+<button id="downloadCBCPdf" class="download-btn">
+
+    <i class="fa-solid fa-file-pdf"></i>
+
+    Download PDF Report
+
+</button>
+<button
+id="voiceSummaryBtn"
+class="download-btn">
+
+🔊 Hindi Voice Summary
+
+</button>
+            <!-- REPORT PREVIEW -->
+
+            <div class="cbc-preview-container">
+
+                <img
+                id="cbcPreview"
+                src=""
+                alt="CBC Report Preview">
+
+                <div id="previewPlaceholder">
+
+                    <i class="fa-solid fa-file-medical"></i>
+
+                    <p>
+
+                        Report Preview
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+
+        <div class="cbc-result-card">
+
+            <h3>
+
+                <i class="fa-solid fa-heart-pulse"></i>
+
+                CBC Analysis
+
+            </h3>
+
+            <div id="cbcResult">
+
+                <div class="cbc-item">
+
+                    <h4>
+
+                        <i class="fa-solid fa-circle-info"></i>
+
+                        Ready To Analyze
+
+                    </h4>
+
+                    <p>
+
+                        Upload a CBC report to begin
+                        analysis.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================
+        EMERGENCY
+========================= -->
+
+<section id="emergency" class="emergency">
+
+
+<div class="section-title">
+
+    <span>EMERGENCY SUPPORT</span>
+
+    <h2>24/7 Emergency Assistance</h2>
+
+    <p>
+
+        Quick access to life-saving services
+        when every second matters.
+
     </p>
 
-    <div class="speciality-grid">
-
-        <div class="speciality-card" data-speciality="eye">
-            <i class="fa-solid fa-eye"></i>
-            <span>Eye Care</span>
-            <p>Vision Specialists</p>
-        </div>
-
-        <div class="speciality-card" data-speciality="heart">
-            <i class="fa-solid fa-heart-pulse"></i>
-            <span>Cardiology</span>
-            <p>Heart Specialists</p>
-        </div>
-
-        <div class="speciality-card" data-speciality="skin">
-            <i class="fa-solid fa-user-doctor"></i></i>
-            <span>Dermatology</span>
-            
-<p>Skin & Hair Care</p>
-        </div>
-
-        <div class="speciality-card" data-speciality="bone">
-            <i class="fa-solid fa-bone"></i>
-            <span>Orthopedic</span>
-           
-      <p>Bone & Joint Care</p>
-        </div>
-
-        <div class="speciality-card" data-speciality="child">
-            <i class="fa-solid fa-child"></i>
-            <span>Pediatrics</span>
-           
-<p>Child Healthcare</p>
-        </div>
-
-        <div class="speciality-card" data-speciality="general">
-            <i class="fa-solid fa-stethoscope"></i>
-            <span>General Care</span>
-           
-<p>Primary Consultation</p>
-        </div>
-
-        <div class="speciality-card" data-speciality="gynecology">
-    <i class="fa-solid fa-person-dress"></i></i>
-    <span>Gynecology</span>
-    <p>Women's Specialist</p>
 </div>
-<div class="speciality-card" data-speciality="dental">
-    <i class="fa-solid fa-tooth"></i>
-    <span>Dental Care</span>
-<p>Smile & Oral Care</p>
-</div>
+
+<div class="emergency-container">
+
+    <div class="emergency-card">
+
+        <div class="emergency-icon">
+
+            <i class="fa-solid fa-truck-medical"></i>
+
+        </div>
+
+        <h3>Ambulance Service</h3>
+
+        <p>
+
+            Immediate ambulance support available
+            24/7 for medical emergencies.
+
+        </p>
+
+        <a href="tel:108" class="emergency-btn">
+
+            Call 108
+
+        </a>
+
     </div>
 
-    <button id="findHospitalBtn">
-        Find Nearby Hospitals
-    </button>
+    <div class="emergency-card">
 
-    <div id="loadingText"></div>
+        <div class="emergency-icon">
 
-    <div id="hospitalResult" class="hospital-results">
+            <i class="fa-solid fa-droplet"></i>
+
+        </div>
+
+        <h3>Blood Bank</h3>
+
+        <p>
+
+            Find nearby blood banks and emergency
+            blood availability instantly.
+
+        </p>
+
+        <a href="#" class="emergency-btn">
+
+            Find Blood
+
+        </a>
 
     </div>
+
+    <div class="emergency-card">
+
+        <div class="emergency-icon">
+
+            <i class="fa-solid fa-phone"></i>
+
+        </div>
+
+        <h3>Emergency Helpline</h3>
+
+        <p>
+
+            Connect with emergency healthcare
+            support and guidance anytime.
+
+        </p>
+
+        <a href="tel:112" class="emergency-btn">
+
+            Call 112
+
+        </a>
+
+    </div>
+
+</div>
+
 
 </section>
 
-
-   
-
-
-  
 <!-- =========================
-        TESTIMONIALS
+      SPECIALIST FINDER
+========================= -->
+
+<section id="clinics" class="clinics">
+
+
+<div class="finder-badge">
+
+    Trusted Healthcare Network
+
+    <p class="clinic-mini-text">
+
+        500+ Hospitals • 24/7 Support • AI Assistance
+
+    </p>
+
+</div>
+
+<h2>Find the Right Specialist</h2>
+
+<p class="clinic-subtitle">
+
+    Select a medical specialty and discover
+    nearby hospitals and healthcare centers.
+
+</p>
+
+<div class="speciality-grid">
+
+    <div class="speciality-card" data-speciality="eye">
+        <i class="fa-solid fa-eye"></i>
+        <span>Eye Care</span>
+        <p>Vision Specialists</p>
+    </div>
+
+    <div class="speciality-card" data-speciality="heart">
+        <i class="fa-solid fa-heart-pulse"></i>
+        <span>Cardiology</span>
+        <p>Heart Specialists</p>
+    </div>
+
+    <div class="speciality-card" data-speciality="skin">
+        <i class="fa-solid fa-user-doctor"></i>
+        <span>Dermatology</span>
+        <p>Skin & Hair Care</p>
+    </div>
+
+    <div class="speciality-card" data-speciality="bone">
+        <i class="fa-solid fa-bone"></i>
+        <span>Orthopedic</span>
+        <p>Bone & Joint Care</p>
+    </div>
+
+    <div class="speciality-card" data-speciality="child">
+        <i class="fa-solid fa-child"></i>
+        <span>Pediatrics</span>
+        <p>Child Healthcare</p>
+    </div>
+
+    <div class="speciality-card" data-speciality="general">
+        <i class="fa-solid fa-stethoscope"></i>
+        <span>General Care</span>
+        <p>Primary Consultation</p>
+    </div>
+
+    <div class="speciality-card" data-speciality="gynecology">
+        <i class="fa-solid fa-person-dress"></i>
+        <span>Gynecology</span>
+        <p>Women's Specialist</p>
+    </div>
+
+    <div class="speciality-card" data-speciality="dental">
+        <i class="fa-solid fa-tooth"></i>
+        <span>Dental Care</span>
+        <p>Smile & Oral Care</p>
+    </div>
+
+</div>
+
+<button id="findHospitalBtn">
+
+    Find Nearby Hospitals
+
+</button>
+
+<div id="loadingText"></div>
+
+<div id="hospitalResult"
+     class="hospital-results">
+
+</div>
+
+
+</section>
+
+<!-- =========================
+      TESTIMONIALS
 ========================= -->
 
 <section id="testimonials" class="testimonials">
 
-    <div class="section-title">
 
-        <span>USER FEEDBACK</span>
+<div class="section-title">
 
-        <h2>Trusted by Users</h2>
+    <span>USER FEEDBACK</span>
 
-        <p class="testimonial-subtitle">
-            Real feedback from users who explored Swasth Setu.
+    <h2>Trusted by Users</h2>
+
+    <p class="testimonial-subtitle">
+
+        Real feedback from users who explored Swasth Setu.
+
+    </p>
+
+</div>
+
+<div class="testimonial-grid">
+
+    <div class="testimonial-card">
+
+        <div class="stars">★★★★★</div>
+
+        <p>
+
+            Swasth Setu made it easy to find nearby
+            hospitals and healthcare services.
+
         </p>
 
-    </div>
+        <div class="user-info">
 
-    <div class="testimonial-grid">
+            <h4>Priyanka</h4>
 
-        <!-- Testimonial 1 -->
-
-        <div class="testimonial-card">
-
-            <div class="stars">
-                
-                ★★★★★
-            </div>
-
-            <p>
-                Swasth Setu made it easy to find nearby hospitals and
-                healthcare services. The interface is clean and very
-                user-friendly.
-            </p>
-
-            <div class="user-info">
-
-                <div>
-
-                    <h4>Priyanka</h4>
-
-                    <span>Patna, Bihar</span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- Testimonial 2 -->
-
-        <div class="testimonial-card">
-
-            <div class="stars">
-                ★★★★★
-            </div>
-
-            <p>
-                The AI Assistant provides quick health guidance and the
-                emergency support section is extremely helpful during
-                urgent situations.
-            </p>
-
-            <div class="user-info">
-
-                <div>
-
-                    <h4>Aditi</h4>
-
-                    <span>Shimla, Himachal Pradesh</span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- Testimonial 3 -->
-
-        <div class="testimonial-card">
-
-            <div class="stars">
-                ★★★★★
-            </div>
-
-            <p>
-                The hospital finder feature works smoothly and helps
-                users discover healthcare facilities nearby with ease.
-            </p>
-
-            <div class="user-info">
-
-                <div>
-
-                    <h4>Riya</h4>
-
-                    <span>Chandigarh, India</span>
-
-                </div>
-
-            </div>
+            <span>Patna, Bihar</span>
 
         </div>
 
     </div>
+
+    <div class="testimonial-card">
+
+        <div class="stars">★★★★★</div>
+
+        <p>
+
+            The AI Assistant provides quick health guidance
+            and emergency support.
+
+        </p>
+
+        <div class="user-info">
+
+            <h4>Aditi</h4>
+
+            <span>Shimla, Himachal Pradesh</span>
+
+        </div>
+
+    </div>
+
+    <div class="testimonial-card">
+
+        <div class="stars">★★★★★</div>
+
+        <p>
+
+            The hospital finder feature works smoothly
+            and helps users discover facilities nearby.
+
+        </p>
+
+        <div class="user-info">
+
+            <h4>Riya</h4>
+
+            <span>Chandigarh, India</span>
+
+        </div>
+
+    </div>
+
+</div>
+
 
 </section>
-    <!-- =========================
-            FOOTER
-    ========================== -->
 
-   <!-- =========================
+<!-- =========================
         FOOTER
 ========================= -->
 
-<footer class="footer">
+<footer id="contact" class="footer">
 
     <div class="footer-container">
 
@@ -810,25 +1322,17 @@
 
             <ul>
 
-                <li>
-                    <a href="#home">Home</a>
-                </li>
+                <li><a href="#home">Home</a></li>
 
-                <li>
-                    <a href="#features">Features</a>
-                </li>
+                <li><a href="#features">Features</a></li>
 
-                <li>
-                    <a href="#assistant">AI Assistant</a>
-                </li>
+                <li><a href="#assistant">Arogya AI</a></li>
 
-                <li>
-                    <a href="#clinics">Hospital Finder</a>
-                </li>
+                <li><a href="#clinics">Hospital Finder</a></li>
 
-                <li>
-                    <a href="#emergency">Emergency</a>
-                </li>
+                <li><a href="#emergency">Emergency</a></li>
+
+                <li><a href="#testimonials">Testimonials</a></li>
 
             </ul>
 
@@ -842,15 +1346,16 @@
 
             <p class="contact-item">
 
-    <i class="fa-solid fa-envelope"></i>
+                <i class="fa-solid fa-envelope"></i>
 
-    <a href="mailto:infoswasthsetu@gmail.com">
-        infoswasthsetu@gmail.com
-    </a>
+                <a href="mailto:infoswasthsetu@gmail.com">
+                    infoswasthsetu@gmail.com
+                </a>
 
-</p>
+            </p>
 
-            <p>
+            <p class="contact-item">
+
                 <i class="fa-brands fa-github"></i>
 
                 <a
@@ -860,9 +1365,11 @@
                     GitHub Profile
 
                 </a>
+
             </p>
 
-            <p>
+            <p class="contact-item">
+
                 <i class="fa-brands fa-linkedin"></i>
 
                 <a
@@ -872,11 +1379,21 @@
                     LinkedIn Profile
 
                 </a>
+
             </p>
 
-            <p>
+            <p class="contact-item">
+
                 <i class="fa-solid fa-globe"></i>
-                Deployment Coming Soon
+
+                <a
+                href="https://swasth-setu-flame.vercel.app"
+                target="_blank">
+
+                    Live Website
+
+                </a>
+
             </p>
 
         </div>
@@ -893,10 +1410,9 @@
 
 </footer>
 
-    <!-- JS -->
-
-    <script src="script.js"></script>
-
+<!-- JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script src="https://unpkg.com/tesseract.js@5/dist/tesseract.min.js"></script>
+<script src="script.js"></script>
 </body>
-
 </html>
